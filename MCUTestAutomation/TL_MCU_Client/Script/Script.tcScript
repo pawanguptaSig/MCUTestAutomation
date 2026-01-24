@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{9252F941-DB23-4FCA-AA50-858B33BB4A19}" version="11.40">
+	<children>
+		<folder name="BusinessFunctions">
+			<child name="pgMCUControlModeConfiguration" key="{C59E3709-0B4B-494D-9955-D37557ABB948}" path="pgMCUControlModeConfiguration.js" />
+			<child name="pgImportRestoreConfiguration" key="{8DF8F67B-B769-43BF-925C-F94E89A7F4E3}" path="pgImportRestoreConfiguration.js" />
+			<child name="pgImportConfiguration" key="{5BBCC457-2A75-4AF0-BBE7-11F1F6ADC826}" path="pgImportConfiguration.js" />
+			<child name="pgImportData" key="{39465DC7-0E23-4D3C-8CC6-0E2CFE0027A3}" path="pgImportData.js" />
+			<child name="pgImportConfigurationData" key="{D38C4DB6-D08D-456C-8688-5D91575BF1D9}" path="pgImportConfigurationData.js" />
+			<child name="pgIntilizingServer" key="{F2B56F9E-4293-4DD1-8472-14A386D818E1}" path="pgIntilizingServer.js" />
+			<child name="pgIntilizingClient" key="{28D66FE2-4CCE-4C25-BE2E-1E302809F860}" path="pgIntilizingClient.js" />
+			<child name="pgTunnelogicSystemMCUMainMenu" key="{80248A03-7EAA-4D2B-9918-D646ED21C204}" path="pgTunnelogicSystemMCUMainMenu.js" />
+			<child name="pgMCULogin" key="{10D36C54-18B3-4142-8723-6D1B2D61886D}" path="pgMCULogin.js" />
+			<child name="pgDashboardColorGroup" key="{E0A68EA9-764A-4D11-B2D1-C7F5BC9CD8BE}" path="pgDashboardColorGroup.js" />
+			<child name="pgDashboardFLG" key="{757C721F-7821-47AD-9E26-76CA1C0CB184}" path="pgDashboardFLG.js" />
+			<child name="pgDashboardSectionGroup" key="{D27725B5-9B07-4420-936A-944B8C7505A8}" path="pgDashboardSectionGroup.js" />
+			<child name="pgDashboardAlternatingColorGroup" key="{93F4C42C-71E6-441D-A62F-90260EC3F8A4}" path="pgDashboardAlternatingColorGroup.js" />
+			<child name="pgDashboardFloorPlan" key="{42FCF067-9734-44E6-8D59-2A18E8572E93}" path="pgDashboardFloorPlan.js" />
+			<child name="pgControlFlowMode" key="{15152B06-017C-4A1D-AAB8-BE047263F37E}" path="pgControlFlowMode.js" />
+			<child name="pgControlStageOverride" key="{DBDB9565-693D-444F-BE9E-ACD3157735DB}" path="pgControlStageOverride.js" />
+			<child name="pgControlColorOverride" key="{F7EF624E-E330-49DC-B4FF-32C6BB8BE11B}" path="pgControlColorOverride.js" />
+			<child name="pgControlDigitalOutput" key="{10BCB74F-8875-4A74-B1E4-7412FEF76AB9}" path="pgControlDigitalOutput.js" />
+			<child name="pgControlIndividualControl" key="{479B26E2-EEC3-412E-A342-986F4ECD2E6C}" path="pgControlIndividualControl.js" />
+			<child name="pgControlEnergyDetails" key="{075519CF-1D11-4482-970A-A79D29A56EEA}" path="pgControlEnergyDetails.js" />
+			<child name="pgSetupIOSettings" key="{2FA859CD-CFF2-40BE-8B27-30D6C06A443A}" path="pgSetupIOSettings.js" />
+			<child name="pgSetupAdvancedIo" key="{FD02682B-323E-47FC-B3C2-AC9BEDD938DE}" path="pgSetupAdvancedIo.js" />
+			<child name="pgSetupMCURedundancy" key="{173962A0-BF48-423C-A5F7-DB940F4EC5AC}" path="pgSetupMCURedundancy.js" />
+			<child name="pgSetupCommissioning" key="{4582688C-ED3B-4A83-BC63-91C743AC51BC}" path="pgSetupCommissioning.js" />
+			<child name="pgSetupAlarm" key="{8F78FBEF-A048-4073-9906-97AB123BD7DE}" path="pgSetupAlarm.js" />
+			<child name="pgSetupMore" key="{C5A83819-1126-4E79-81FF-E63CBB0CE239}" path="pgSetupMore.js" />
+			<child name="pgSetupImport" key="{D0AE5939-3BE6-4FAA-A8E1-2771433480D9}" path="pgSetupImport.js" />
+			<child name="pgEventLog" key="{8D6BEE30-5480-4F08-9ED6-AAE26D6BC3F6}" path="pgEventLog.js" />
+			<child name="pgEventLogLuminaireStatus" key="{A847EE85-9915-4227-BF47-AC244AF7ACA7}" path="pgEventLogLuminaireStatus.js" />
+			<child name="pgEventLogFilter" key="{0DD413DE-B72D-4EE2-BA68-10056B2BAF6E}" path="pgEventLogFilter.js" />
+			<child name="pgEventLogExport" key="{7E03B7A3-C572-4BFE-9175-F13348CCF072}" path="pgEventLogExport.js" />
+			<child name="pgEventLogDelete" key="{F2858708-1481-486B-852F-E3C5374C370E}" path="pgEventLogDelete.js" />
+			<child name="pgDashboardColorGroupDggDetails" key="{10FF5140-27F8-4E3A-9ACD-0403DE213D09}" path="pgDashboardColorGroupDggDetails.js" />
+			<child name="pgDashboardColorGroupBoreHealthGeneral" key="{F2294C03-206E-4237-9075-83DA5218FAA1}" path="pgDashboardColorGroupBoreHealthGeneral.js" />
+			<child name="pgDashboardColorGroupBoreHealthDeviceDetails" key="{04F9ED37-C42E-4877-A130-881A67022838}" path="pgDashboardColorGroupBoreHealthDeviceDetails.js" />
+			<child name="pgDashboardColorGroupBoreStageInfo" key="{3E001BBB-780A-45FA-9A6E-AA1275399CB7}" path="pgDashboardColorGroupBoreStageInfo.js" />
+			<child name="pgDashboardColorGroupPhotometerGeneral" key="{B87145D5-7E47-42BA-B482-F0923F43211D}" path="pgDashboardColorGroupPhotometerGeneral.js" />
+			<child name="pgDashboardColorGroupPhotometerTimeBasedOverride" key="{4FA71FCB-BB63-4A6C-ADDA-14ED179239A7}" path="pgDashboardColorGroupPhotometerTimeBasedOverride.js" />
+			<child name="pgDashboardFlgFlg1Colorgroup" key="{AF0C8F53-B9E3-4C91-818A-9E750279BB31}" path="pgDashboardFlgFlg1Colorgroup.js" />
+			<child name="pgDashboardFlgFlg1Sectiongroup" key="{A39FC342-76AB-4822-A3A8-C3F4D423B7F8}" path="pgDashboardFlgFlg1Sectiongroup.js" />
+			<child name="pgDashboardFlgBoreHealthGeneral" key="{C246119D-01B0-4C8D-91D3-F2765DA58DA8}" path="pgDashboardFlgBoreHealthGeneral.js" />
+			<child name="pgDashboardFlgBoreHealthDeviceDetails" key="{A8F91672-87E3-46D0-811F-30008A048E02}" path="pgDashboardFlgBoreHealthDeviceDetails.js" />
+			<child name="pgDashboardFlgBoreStageInfo" key="{1E9A5679-6868-4E5C-9A45-D47B5AF014F8}" path="pgDashboardFlgBoreStageInfo.js" />
+			<child name="pgDashboardFlgPhotometerGeneral" key="{C11F857A-C0DE-40EF-959C-ABEB4A26CFD4}" path="pgDashboardFlgPhotometerGeneral.js" />
+			<child name="pgDashboardFlgPhotometerTimeBasedOverride" key="{07E54F65-00AE-4709-87A2-E584493CF38B}" path="pgDashboardFlgPhotometerTimeBasedOverride.js" />
+			<child name="pgDashboardSectiongroupSectiongroup1" key="{EAA994F8-C2DB-4DEA-93B0-16AFD00819D5}" path="pgDashboardSectiongroupSectiongroup1.js" />
+			<child name="pgDashboardSectiongroupBoreHealthGeneral" key="{7DC34472-5D18-4408-A955-95324D08AF5D}" path="pgDashboardSectiongroupBoreHealthGeneral.js" />
+			<child name="pgDashboardSectiongroupBoreHealthDeviceDetails" key="{E8B2CC3B-8A58-4D1A-9CF4-462D4EBD22C0}" path="pgDashboardSectiongroupBoreHealthDeviceDetails.js" />
+			<child name="pgDashboardSectiongroupBoreStageInfo" key="{C82BFD28-C278-41F9-94B3-262A6BB60893}" path="pgDashboardSectiongroupBoreStageInfo.js" />
+			<child name="pgDashboardSectiongroupPhotometerGeneral" key="{DC9EA5E4-7BEF-473D-9A7B-AEEB781977BE}" path="pgDashboardSectiongroupPhotometerGeneral.js" />
+			<child name="pgDashboardSectiongroupPhotometerTimeBasedOverride" key="{29026AA1-561C-4236-B854-D0084AD14FC4}" path="pgDashboardSectiongroupPhotometerTimeBasedOverride.js" />
+			<child name="pgTest1" key="{BA79926A-4536-48ED-AF42-0A1D9CD3B8B2}" path="pgTest1.js" />
+			<child name="pgDashboardPhotometerIconPage" key="{CB22044D-9950-4DBB-8406-460EE8F3D044}" path="pgDashboardPhotometerIconPage.js" />
+			<child name="pgMainNavigation" key="{1BA619E1-79FF-46AA-BB9E-C034614E1D18}" path="pgMainNavigation.js" />
+			<child name="pgControlNavigation" key="{6E30385D-C907-43BE-B10D-95E8FBB2E7C6}" path="pgControlNavigation.js" />
+			<child name="test123" key="{050AA728-B0D8-450B-B220-4FB6CE35C235}" path="test123.js" />
+			<child name="pgDashboardNavigation" key="{58CD9FB3-6C35-4991-89BF-F938B4E31D2D}" path="pgDashboardNavigation.js" />
+		</folder>
+		<folder name="Generic">
+			<child name="AppActions" key="{FCA8E524-40D6-4E0F-BDC6-0AFC7905893C}" path="AppActions.js" />
+			<child name="AppDrag" key="{271AC181-114D-4B74-8F0B-7D93E066EDCB}" path="AppDrag.js" />
+			<child name="AppDropDown" key="{15E2B847-36DF-4D46-8011-566BA5B03567}" path="AppDropDown.js" />
+			<child name="AppGeneric" key="{B463189A-E266-4C5E-BAF9-43D37BE45C02}" path="AppGeneric.js" />
+			<child name="AppImage" key="{53AF7FCD-CFF4-445A-AD46-D52C268BBAA6}" path="AppImage.js" />
+			<child name="AppLaunch" key="{9CC8E7F2-721F-46A7-9EC7-576383151DDA}" path="AppLaunch.js" />
+			<child name="AppRadioButton" key="{95CF939B-9B4D-4E4C-9525-9D517789C67F}" path="AppRadioButton.js" />
+			<child name="AppSettings" key="{1553113B-2132-4B0F-92EC-FF95DD2973D3}" path="AppSettings.js" />
+			<child name="AppSettings1" key="{88F2270E-AA91-416F-88DF-62D73B0E52C1}" path="AppSettings1.js" />
+			<child name="AppString" key="{929DBFD7-FB5F-44AC-81E5-E9099EA38100}" path="AppString.js" />
+			<child name="AppText" key="{188019C7-AB5A-476C-BA6B-4DD055E9BAF9}" path="AppText.js" />
+			<child name="AppWindowsFile" key="{79D69222-29DC-4C78-A2EC-00A3A852EB1D}" path="AppWindowsFile.js" />
+			<child name="AppColor" key="{C30A1AB1-89FC-4477-9D3C-0B4891BB0AEC}" path="AppColor.js" />
+		</folder>
+		<folder name="StepDefinitions">
+			<child name="Epic_01" key="{42680DEE-6C46-4B76-8771-1442B8DF3320}" path="Epic_01.js" />
+			<child name="Unit2" key="{E2BE3353-3446-45DD-A8F3-6E841CCF8639}" path="Unit2.js" />
+			<child name="Unit3" key="{81563013-17E5-41E8-8E61-27F38B6DB526}" path="Unit3.js" />
+		</folder>
+	</children>
+</Root>

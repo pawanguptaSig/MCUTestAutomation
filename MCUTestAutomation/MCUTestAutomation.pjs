@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{BB58594A-6BCD-482E-BBB5-15A65DC271C1}">
+	<children>
+		<child name="TL_MCU_Client" key="{4142B829-2EE1-43C6-A86E-612684E4857A}" path="TL_MCU_Client\TL_MCU_Client.mds" />
+	</children>
+	<testItems key="{761AA312-1F10-41A2-B0B6-54E76C524B78}">
+		<children>
+			<testItem key="{4142B829-2EE1-43C6-A86E-612684E4857A}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{5FD2DB93-83DB-4CAD-96B4-8589F753FBAD}" />
+	<analysis key="{24F66E2E-974C-4329-B87A-487A6B916356}" />
+	<scc key="{C900492B-D218-429C-9AA0-264B7D78CA88}" name="Git Plugin">
+		<data />
+	</scc>
+</Root>

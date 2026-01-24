@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{42D2222C-ACA2-405F-8E67-05D5C42EB839}" version="2">
+	<data key="{10D36C54-18B3-4142-8723-6D1B2D61886D}">
+		<item typeId="{87B03792-E854-4F5D-9F33-165F1F874209}" version="2" lineNo="131" kind="0" dateTime="45992.7553587963" objectName="Aliases.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_.tabCtrlMain.ListboxSuperUser.Button" objectLeft="88" objectTop="161" objectRight="359" objectBottom="202" clickPointX="179" clickPointY="180" imageFileName="tcvi647898609229080.png" storageFileName="" needUpdate="False" rectColor="255" />
+	</data>
+</Root>

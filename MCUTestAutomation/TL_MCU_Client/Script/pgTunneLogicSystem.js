@@ -1,0 +1,10 @@
+﻿var dd 
+
+
+=
+
+
+
+function  superuser(){
+  
+}

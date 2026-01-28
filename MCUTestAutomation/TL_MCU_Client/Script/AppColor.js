@@ -6,7 +6,7 @@
 function IdentifyColorGroup(strLocName) {
   var color = GetBarColorRGB(strLocName);
 
-  if (color.R > 200 && color.G < 50 && color.B < 50)
+  if (color.R > 200 && color.G < 55 && color.B < 55)
     return "red";
 
   if (color.G > 100 && color.R < 50 && color.B < 50)

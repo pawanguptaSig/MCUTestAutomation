@@ -2,9 +2,10 @@
 //USEUNIT AppLaunch
 //USEUNIT AppSettings1
 //USEUNIT AppWindowsFile
+//USEUNIT pgDashboard
 //USEUNIT pgDashboardColorGroup
-//USEUNIT pgDashboardColorGroupPhotometerGeneral
-//USEUNIT pgDashboardColorGroupBoreStageInfo
+//USEUNIT pgDashboardPhotometerGeneral
+//USEUNIT pgDashboardBoreStageInfo
 //USEUNIT pgControlStageOverride
 //USEUNIT pgMainNavigation
 //USEUNIT pgControlNavigation
@@ -12,6 +13,7 @@
 //USEUNIT pgControlIndividualControl
 //USEUNIT pgDashboardNavigation
 //USEUNIT pgDashboardFLG
+//USEUNIT pgDashboardSectionGroup
 
 
 //Done
@@ -99,47 +101,47 @@ Given("TunneLogic MCU application is on Dashboard Page", function (){
 });
 
 When("Clicked on Photometer1 on Main Portal", function (){
-  pgDashboardColorGroup.ClickOnPhotometermeter1_In_MainPortal();
+  pgDashboard.ClickOnPhotometermeter1_In_MainPortal();
 });
 
 When("Clicked on Photometer2 on Main Portal", function (){
-  pgDashboardColorGroup.ClickOnPhotometermeter2_In_MainPortal();
+  pgDashboard.ClickOnPhotometermeter2_In_MainPortal();
 });
 
 When("Clicked on Photometer3 on On slip Portal", function (){
-  pgDashboardColorGroup.ClickOnPhotometermeter3_In_OnSlip1Portal();
+  pgDashboard.ClickOnPhotometermeter3_In_OnSlip1Portal();
 });
 
 When("Clicked on Photometer4 on On slip Portal", function (){
-  pgDashboardColorGroup.ClickOnPhotometermeter4_In_OnSlip1Portal();
+  pgDashboard.ClickOnPhotometermeter4_In_OnSlip1Portal();
 });
 
 When("Clicked on {arg} button", function (param1){
-  pgDashboardColorGroupPhotometerGeneral.ClickOnTogglePhotometerBtn(param1);
+  pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn(param1);
 });
 
 Then("{arg} is written next to the enable\\/disable button", function (param1){
-  pgDashboardColorGroupPhotometerGeneral.VerifyDisabledByMCUVisible(param1);
+  pgDashboardPhotometerGeneral.VerifyDisabledByMCUVisible(param1);
 });
 
 Then("Clicked on back button", function (){
-  pgDashboardColorGroupPhotometerGeneral.ClickOnBackButton();
+  pgDashboardPhotometerGeneral.ClickOnBackButton();
 });
 
 Then("Verify {arg} is written under photometer icon", function (param1){
-  pgDashboardColorGroup.VerifyDisabledVisible(param1);
+  pgDashboard.VerifyDisabledVisible(param1);
 });
 
 When("Clicked on back button", function (){
-  pgDashboardColorGroupPhotometerGeneral.ClickOnBackButton();
+  pgDashboardPhotometerGeneral.ClickOnBackButton();
 });
 
 When("Clicked on {arg} from Bore Stage Info", function (param1){
-  pgDashboardColorGroup.ClickBoreStagePortal(param1);
+  pgDashboard.ClickBoreStagePortal(param1);
 });
 
 Then("Verify Control Source is {arg}", function (param1){
-  pgDashboardColorGroupBoreStageInfo.VerifyControlSourceValue(param1);
+  pgDashboardBoreStageInfo.VerifyControlSourceValue(param1);
 });
 
 When("Clicked on {arg} Tab", function (param1){
@@ -163,17 +165,15 @@ When("Clicked on {arg} on Bore1 On Slip Portal", function (param1){
 });
 
 Then("Clicked on {arg} from Bore Stage Info", function (param1){
-  pgDashboardColorGroup.ClickBoreStagePortal(param1);
+  pgDashboard.ClickBoreStagePortal(param1);
 });
 
-
-
 When("Clicked on Emergency override", function (){
-  pgDashboardColorGroup.ClickOnEmergencyOverride();
+  pgDashboard.ClickOnEmergencyOverride();
 });
 
 When("Clicked on OK", function (){
-  pgDashboardColorGroup.ClickOnOK_Popup();
+  pgDashboard.ClickOnOK_Popup();
 });
 
 Then("Set light level as {arg} for {arg} color group", function (param1, param2){
@@ -212,6 +212,30 @@ When("Clicked on {arg} Tab in Dashboard Tab", function (param1){
   pgDashboardNavigation.ClickOnTabOnDashboardPage(param1);
 });
 
+Then("Verify logged in user", function (){
+  pgDashboard.VerifyLoggedUser();
+});
+
+Then("Verify Status menu", function (){
+  pgDashboard.VerifyStatusMenu();
+});
+
+Then("Verify {arg} Status", function (param1){
+  pgDashboard.VerifyPhotometerStatus(param1);
+});
+
+Then("Verify Bore Health value", function (){
+  pgDashboard.VerifyBoreHealth();
+});
+
+Then("Verify Bore Stage Info {arg} Portal", function (param1){
+  pgDashboard.VerifyBoreStageInfo(param1);
+});
+
+Then("verify Traffic direction", function (){
+  pgDashboard.VerifyTrafficDirection();
+});
+
 Then("Verify DGGs in Bore {arg}", function (param1){
   pgDashboardColorGroup.getDggOnBore(param1);
 });
@@ -221,5 +245,7 @@ Then("Verify FLGs in Bore {arg}", function (param1){
 });
 
 Then("Verify Section Groups in Bore {arg}", function (param1){
-  throw new NotImplementedError();
+  pgDashboardSectionGroup.getSectionGroupOnBore(param1);
 });
+
+

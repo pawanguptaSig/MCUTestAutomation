@@ -8,7 +8,6 @@ var BaseLanding = "Aliases.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_
 var tabCtrlMain = BaseLanding + "tabCtrlMain."
 
 var Grid = tabCtrlMain + "Grid."
-//NameMapping.Sys.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_.DockPanel.StackPanel.tabCtrlMain.Grid.OnSlip1Bore1detailsBottom.Grid.ContentPresenter
 var ControlSourceValue = "NameMapping.Sys.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_.DockPanel.StackPanel.tabCtrlMain.Grid.StackPanel.DataContext.ControlSource"
 var BackbtnMain = BaseLanding + "Back"
 //----------------------------------------------------------------------------------------------------------------------------------------
@@ -33,3 +32,4 @@ function VerifyControlSourceValue(expectedValue) {
               "', but found '" + ControlSourceVal + "'");
   }
 }
+

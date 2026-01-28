@@ -9,7 +9,7 @@ var tabCtrlMain = BaseLanding + "tabCtrlMain."
 var Grid = tabCtrlMain + "Grid2."
 
 var BoreOnSlipFLG = tabCtrlMain + "Grid32.Grid2";
-var BoreMainFLG = "NameMapping.Sys.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_.DockPanel.StackPanel.tabCtrlMain.Grid.OnSlip1Bore1detailsBottom.Grid2.Grid";
+var BoreMainFLG = NameMapping.Sys.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_.DockPanel.StackPanel.tabCtrlMain.Grid.OnSlip1Bore1detailsBottom.Grid2.Grid;
 //----------------------------------------------------------------------------------------------------------------------------------------
 
 function getFLGOnBore(BoreName) {
@@ -25,7 +25,6 @@ function getFLGOnBore(BoreName) {
       return null;
   }
 }
-
 
 function VerifyFLGsInBoreSection(BoreType) {
   var sectionContainer = AppGeneric.getUIObject(BoreType);
@@ -50,28 +49,23 @@ function VerifyFLGsInBoreSection(BoreType) {
         Log.Error("FLG Grid not found for item index " + (i + 1));
         continue;
       }
-
-        var FLGBorderColor =
-          FLGItems[i]
-          .FindChild("ClrClassName", "ListBoxItem", 10)
-            .FindChild("ClrClassName", "Label", 10);  
       
+      var FLGBorderColor = FLGItems[i].FindChild("ClrClassName", "Label", 25);
       
-      if (!FLGBorderColor || !FLGBorderColor.Exists)
-      {
-        continue;
-      } else
-      {
-        var FLGColorName = AppColor.IdentifyColorGroup(FLGBorderColor);
-      }
+      var FLGColorName = AppColor.IdentifyColorGroup(FLGBorderColor);
        
-    
       var vm = FLGGrid.DataContext;
-      var FlgName                 = vm.FlgName
+      var FlgName                 = vm.FlgName;
       var FlgHealth               = vm.FlgHealth;
       var FlgLightHealth          = vm.FlgLightHealth; 
       var FlgHealthPercent        = vm.FlgHealthPercent;
-         
+      
+      if (FlgName === "undefined")
+      {
+        Log.Message("Invalid health data for FLG index " + (i + 1));
+        continue;
+      }
+      
 
       Log.Message(
         "FLG [" + (i + 1) + "]" +

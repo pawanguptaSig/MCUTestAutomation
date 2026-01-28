@@ -131,7 +131,6 @@
       Then Verify Control Source is "Night override"
       And Clicked on back button
 
-      
    Scenario: Verify control source is time-based Override after disabling photometer.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer1 on Main Portal
@@ -240,7 +239,7 @@
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on "Control" Tab
       And Clicked on "Individual Control" Tab in Control Tab
-      And Select Bore "Bore 1" 
+      And Select Bore "Bore 1"
       And Select FLG "FLG 1"
       And Select color group "Red1"
       And Select Luminaire "B1P1_R01_L0001_Ent"
@@ -252,6 +251,16 @@
    Scenario: Check Dashboard UI.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on "Dashboard" Tab
+      Then Verify logged in user
+      And Verify Status menu
+      And Verify "Photometer 1" Status
+      And Verify "Photometer 2" Status
+      And Verify "Photometer 3" Status
+      And Verify "Photometer 4" Status
+      And Verify Bore Health value
+      And Verify Bore Stage Info "Main" Portal
+      And Verify Bore Stage Info "on slip" Portal
+      And verify Traffic direction
       
    Scenario: Check color group details and UI.
       Given TunneLogic MCU application is on Dashboard Page
@@ -269,7 +278,7 @@
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on "Dashboard" Tab
       And Clicked on "Section Group" Tab in Dashboard Tab
-      Then Verify Section Groups in Bore "Main"
+      Then Verify Section Groups in Bore "onslip"
       
    Scenario: Check the Alternating section design and UI.
       Given TunneLogic MCU application is on Dashboard Page

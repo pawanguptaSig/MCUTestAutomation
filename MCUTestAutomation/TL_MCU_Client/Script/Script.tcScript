@@ -37,8 +37,8 @@
 			<child name="pgDashboardColorGroupDggDetails" key="{10FF5140-27F8-4E3A-9ACD-0403DE213D09}" path="pgDashboardColorGroupDggDetails.js" />
 			<child name="pgDashboardColorGroupBoreHealthGeneral" key="{F2294C03-206E-4237-9075-83DA5218FAA1}" path="pgDashboardColorGroupBoreHealthGeneral.js" />
 			<child name="pgDashboardColorGroupBoreHealthDeviceDetails" key="{04F9ED37-C42E-4877-A130-881A67022838}" path="pgDashboardColorGroupBoreHealthDeviceDetails.js" />
-			<child name="pgDashboardColorGroupBoreStageInfo" key="{3E001BBB-780A-45FA-9A6E-AA1275399CB7}" path="pgDashboardColorGroupBoreStageInfo.js" />
-			<child name="pgDashboardColorGroupPhotometerGeneral" key="{B87145D5-7E47-42BA-B482-F0923F43211D}" path="pgDashboardColorGroupPhotometerGeneral.js" />
+			<child name="pgDashboardBoreStageInfo" key="{3E001BBB-780A-45FA-9A6E-AA1275399CB7}" path="pgDashboardBoreStageInfo.js" />
+			<child name="pgDashboardPhotometerGeneral" key="{B87145D5-7E47-42BA-B482-F0923F43211D}" path="pgDashboardPhotometerGeneral.js" />
 			<child name="pgDashboardColorGroupPhotometerTimeBasedOverride" key="{4FA71FCB-BB63-4A6C-ADDA-14ED179239A7}" path="pgDashboardColorGroupPhotometerTimeBasedOverride.js" />
 			<child name="pgDashboardFlgFlg1Colorgroup" key="{AF0C8F53-B9E3-4C91-818A-9E750279BB31}" path="pgDashboardFlgFlg1Colorgroup.js" />
 			<child name="pgDashboardFlgFlg1Sectiongroup" key="{A39FC342-76AB-4822-A3A8-C3F4D423B7F8}" path="pgDashboardFlgFlg1Sectiongroup.js" />
@@ -59,6 +59,7 @@
 			<child name="pgControlNavigation" key="{6E30385D-C907-43BE-B10D-95E8FBB2E7C6}" path="pgControlNavigation.js" />
 			<child name="test123" key="{050AA728-B0D8-450B-B220-4FB6CE35C235}" path="test123.js" />
 			<child name="pgDashboardNavigation" key="{58CD9FB3-6C35-4991-89BF-F938B4E31D2D}" path="pgDashboardNavigation.js" />
+			<child name="pgDashboard" key="{24099E97-912C-4751-8FAE-04E596587DC3}" path="pgDashboard.js" />
 		</folder>
 		<folder name="Generic">
 			<child name="AppActions" key="{FCA8E524-40D6-4E0F-BDC6-0AFC7905893C}" path="AppActions.js" />

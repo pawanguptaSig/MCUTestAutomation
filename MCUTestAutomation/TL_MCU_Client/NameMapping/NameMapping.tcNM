@@ -162,6 +162,15 @@
 																			</Property>
 																		</Properties>
 																	</Child>
+																	<Child Name="StackPanel" Key="{93ADCE37-6D48-43EE-8E98-12C48EE46112}" ExtendedFind="True">
+																		<Image FileName="-575306964" Left="847" Top="37" Right="932" Bottom="56" />
+																		<TypeInfo Item0="{DAD23D38-82A1-45AF-A406-9A5FD697C207}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.StackPanel" />
+																			</Property>
+																		</Properties>
+																	</Child>
 																</Children>
 															</Child>
 															<Child Name="StackPanel" Key="{B5D251E5-3E2E-4300-B395-C5D20F00843B}" ExtendedFind="True">
@@ -229,6 +238,15 @@
 																		<Properties>
 																			<Property Name="WPFControlName">
 																				<Value Value="TurnOff" />
+																			</Property>
+																		</Properties>
+																	</Child>
+																	<Child Name="Grid" Key="{46E5B7B0-ABEB-47EA-BBD7-46CBD52BAC93}" ExtendedFind="True">
+																		<Image FileName="-1218841914" Left="741" Top="458" Right="822" Bottom="539" />
+																		<TypeInfo Item0="{DAD23D38-82A1-45AF-A406-9A5FD697C207}" />
+																		<Properties>
+																			<Property Name="ClrFullClassName">
+																				<Value Value="System.Windows.Controls.Grid" />
 																			</Property>
 																		</Properties>
 																	</Child>
@@ -895,6 +913,20 @@
 																												<Value Value="System.Windows.Controls.Border" />
 																											</Property>
 																										</Properties>
+																										<Children>
+																											<Child Name="ButtonBoreHealth" Key="{19308A80-1FB0-4A5E-A841-5E644CF34062}" ExtendedFind="True">
+																												<Image FileName="1008077308" Left="92" Top="457" Right="220" Bottom="538" />
+																												<TypeInfo Item0="{5DC8DDDF-19B8-43C5-B8F5-0172ABF60052}" />
+																												<Properties>
+																													<Property Name="ClrFullClassName">
+																														<Value Value="System.Windows.Controls.Button" />
+																													</Property>
+																													<Property Name="WPFControlText">
+																														<Value Value="" />
+																													</Property>
+																												</Properties>
+																											</Child>
+																										</Children>
 																									</Child>
 																								</Children>
 																							</Child>
@@ -1153,6 +1185,44 @@
 																						<Properties>
 																							<Property Name="WPFControlName">
 																								<Value Value="floorPlanView" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																				</Children>
+																			</Child>
+																			<Child Name="StackPanel2" Key="{59F55B23-9E6D-4438-84D3-539639660EEA}" ExtendedFind="True">
+																				<Image FileName="1666398119" Left="745" Top="97" Right="943" Bottom="152" />
+																				<TypeInfo Item0="{DAD23D38-82A1-45AF-A406-9A5FD697C207}" />
+																				<Properties>
+																					<Property Name="ClrFullClassName">
+																						<Value Value="System.Windows.Controls.StackPanel" />
+																					</Property>
+																					<Property Name="WPFControlOrdinalNo">
+																						<Value Value="2" Type="0" />
+																					</Property>
+																				</Properties>
+																				<Children>
+																					<Child Name="GenericButton" Key="{EA12FC79-6233-4A3F-9742-432A32F56772}">
+																						<Image FileName="1666398119" Left="783" Top="104" Right="814" Bottom="135" />
+																						<TypeInfo Item0="{DAD23D38-82A1-45AF-A406-9A5FD697C207}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="TunneLogicMCUClient.UserControls.GenericButton" />
+																							</Property>
+																							<Property Name="WPFControlText">
+																								<Value Value="" />
+																							</Property>
+																						</Properties>
+																					</Child>
+																					<Child Name="StackPanel" Key="{69AE74F6-309B-46B2-99D3-8E3E15A99B02}">
+																						<Image FileName="-771037999" Left="813" Top="102" Right="943" Bottom="152" />
+																						<TypeInfo Item0="{DAD23D38-82A1-45AF-A406-9A5FD697C207}" />
+																						<Properties>
+																							<Property Name="ClrFullClassName">
+																								<Value Value="System.Windows.Controls.StackPanel" />
+																							</Property>
+																							<Property Name="WPFControlOrdinalNo">
+																								<Value Value="1" Type="0" />
 																							</Property>
 																						</Properties>
 																					</Child>
@@ -3689,9 +3759,12 @@
 							<Child Name="TextblockEventLog" Owner="{37F09207-3FBB-49B8-9EFC-1274F0FFC9CB}" />
 						</Child>
 						<Child Name="Grid2" Owner="{F481DA8F-8FB1-4A64-AA3D-20CA5DDF6EC3}">
-							<Child Name="Border" Owner="{8538335E-B302-469E-8429-DC0C4E673518}" />
+							<Child Name="Border" Owner="{8538335E-B302-469E-8429-DC0C4E673518}">
+								<Child Name="ButtonBoreHealth" Owner="{19308A80-1FB0-4A5E-A841-5E644CF34062}" />
+							</Child>
 							<Child Name="Button" Owner="{97BE3252-B688-4159-A03D-CB1FE2155756}" />
 							<Child Name="Button2" Owner="{D3416B70-9AD0-4F7A-BDE6-E910D01F8E7C}" />
+							<Child Name="Grid" Owner="{46E5B7B0-ABEB-47EA-BBD7-46CBD52BAC93}" />
 						</Child>
 						<Child Name="tabItem1" Owner="{E3EDED57-153D-4712-8C1D-09E58D66082C}" />
 						<Child Name="TextblockDisabled" Owner="{FA86629E-CC3F-4A57-AC99-644E7312B1C9}" />
@@ -3956,11 +4029,14 @@
 							</Child>
 							<Child Name="Grid" Owner="{6D33C7EF-C0D2-4932-BD41-4969A3AA32AE}" />
 						</Child>
+						<Child Name="GenericButton" Owner="{EA12FC79-6233-4A3F-9742-432A32F56772}" />
+						<Child Name="StackPanel2" Owner="{69AE74F6-309B-46B2-99D3-8E3E15A99B02}" />
 					</Child>
 					<Child Name="Back" Owner="{CDC661A5-9ED7-4F82-B204-5B0D5A84366C}" />
 					<Child Name="GenericButton" Owner="{F0CC5F79-E0EF-4415-B9AC-EF4A0E2AF5BE}" />
 					<Child Name="TurnOff" Owner="{7F7EC1A4-4C3C-4C47-B44C-E8A27C273622}" />
 					<Child Name="TextblockSuperUser" Owner="{EA2D86E4-3EFE-4D6D-A894-E2266F2B30F0}" />
+					<Child Name="StackPanel" Owner="{93ADCE37-6D48-43EE-8E98-12C48EE46112}" />
 				</Child>
 			</Child>
 		</Child>

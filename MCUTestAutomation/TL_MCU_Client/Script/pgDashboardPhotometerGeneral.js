@@ -15,7 +15,6 @@ var TextDisabledByMcu =  Grid + "TextblockDisabledByMcu"
 
 var OKBtn = tabCtrlMain + "btnCancel"
 var CancelBtn = tabCtrlMain + "btnOK"
-
 var BackbtnMain = BaseLanding + "Back"
 //----------------------------------------------------------------------------------------------------------------------------------------
 function ClickOnTimeBasedOverrideTab()

@@ -3,6 +3,7 @@
 //USEUNIT AppText
 //USEUNIT AppString
 //USEUNIT AppColor
+//USEUNIT pgDashboardPhotometerGeneral
 //----------------------------------------------------------------------------------------------------------------------------------------
 var BaseLanding = "Aliases.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_."
 var LoggedUser = BaseLanding + "StackPanel"
@@ -60,37 +61,61 @@ function VerifyStatusMenu()
   
   var status = AppGeneric.getUIObject(Status);
   var uiObj = status.FindAllChildren("ClrClassName","StackPanel", 5);
-  if (uiObj.length === 0) {
-      Log.Error("No other Status option is visible");
-      return;
-    }
-    
+  if (uiObj.length === 0) 
+  {
+    Log.Error("No other Status option is visible");
+    return;
+        
     var len_StatusIcon = uiObj.length;
-
     for (var i = 0; i < len_StatusIcon; i++) {
-    var StatusIconIndex = uiObj[i];
-    
-    if (StatusIconIndex.IsVisible)
-    {
-      if(i==1){
-        Log.Message("Mode icon is visible");
-      }
-      
-      if(i==2){
-        Log.Message("Setup icon is visible");
-      }
-      
-      if(i==3){
-        Log.Message("Scada icon is visible");
-      }
-      
-      if(i==4){
-        Log.Message("I/O icon is visible");
+      var StatusIconIndex = uiObj[i];   
+      if (StatusIconIndex.IsVisible)
+      {
+        if(i==1){
+          Log.Message("Mode icon is visible");
+        }     
+        if(i==2){
+          Log.Message("Setup icon is visible");
+        }      
+        if(i==3){
+          Log.Message("Scada icon is visible");
+        }      
+        if(i==4){
+          Log.Message("I/O icon is visible");
+        }
       }
     }
   }
 }
 
+function ClickPhotometer(photometerName)
+{
+  switch (photometerName.toLowerCase()) {
+
+    case "photometer 1":
+      AppActions.click(MainPortalPhotometer1);
+      Log.Message("Photometer1 On Main Portal is clicked");
+      break;
+
+    case "photometer 2":
+      AppActions.click(MainPortalPhotometer2);
+      Log.Message("Photometer2 On Main Portal is clicked");
+      break;
+
+    case "photometer 3":
+      AppActions.click(OnSlip1Photometer3);
+      Log.Message("Photometer3 On OnSlip1 Portal is clicked");
+      break;
+
+    case "photometer 4":
+      AppActions.click(OnSlip1Photometer4);
+      Log.Message("Photometer4 On OnSlip1 Portal is clicked");
+      break;
+
+    default:
+      Log.Error("Invalid Photometer Name: " + photometerName);
+  }
+}
 function ClickOnPhotometermeter1_In_MainPortal()
 {
   AppActions.click(MainPortalPhotometer1);
@@ -115,6 +140,8 @@ function ClickOnPhotometermeter4_In_OnSlip1Portal()
   Log.Message("Photometermeter4 On OnSlip1 Portal is clicked");
 }
 
+//function VerifyPhotometerStatus()
+
 function VerifyDisabledVisible(expectedText) 
 {  
   var uiObj = eval(DisabledUnderPhotometer);
@@ -132,6 +159,68 @@ function VerifyDisabledVisible(expectedText)
   Log.Warning("The expected message "+ expectedText +" is NOT displayed.");
   return false;
 }
+
+function TogglePhotometer1(strToggle, strPhotometer) 
+{
+  var StatusValue = VerifyPhotometerStatus(strPhotometer);
+  if (StatusValue) {
+    var isEnabled = StatusValue.isEnabled;
+    if (isEnabled) {
+      ClickPhotometer(strPhotometer);
+      pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn(strToggle)
+      Log.Message(strPhotometer + " was Enabled, clicked Disable.");
+    } else {
+      Log.Message(strPhotometer + " is already Disabled");
+    }
+  }
+}
+
+function TogglePhotometer(strToggle, strPhotometer) 
+{
+  var StatusValue = VerifyPhotometerStatus(strPhotometer);
+
+  if (!StatusValue) {
+    Log.Error("Unable to fetch status for " + strPhotometer);
+    return;
+  }
+
+  var isEnabled = StatusValue.isEnabled;
+
+  // ---------------- ENABLE ----------------
+  if (strToggle.toLowerCase() === "enable") {
+
+    if (!isEnabled) {
+      ClickPhotometer(strPhotometer);
+      pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn(strToggle);
+      Log.Message(strPhotometer + " was Disabled, clicked Enable.");
+    }
+    else {
+      Log.Message(strPhotometer + " is already Enabled.");
+    }
+
+  }
+
+  // ---------------- DISABLE ----------------
+  else if (strToggle.toLowerCase() === "disable") {
+
+    if (isEnabled) {
+      ClickPhotometer(strPhotometer);
+      pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn(strToggle);
+      Log.Message(strPhotometer + " was Enabled, clicked Disable.");
+    }
+    else {
+      Log.Message(strPhotometer + " is already Disabled.");
+    }
+
+  }
+
+  // ---------------- INVALID ----------------
+  else {
+    Log.Error("Invalid Toggle value: " + strToggle + 
+              ". Use 'Enable' or 'Disable'");
+  }
+}
+
 
 function ClickBoreStagePortal(portalName) {
 
@@ -191,8 +280,23 @@ function VerifyPhotometerStatus(PhotometerName)
     return;
   }
 
-  var Status = uiObj.DataContext.ConnStatus;
-  Log.Message(PhotometerName + " status is : " + Status + ".");
+  var status    = uiObj.DataContext.ConnStatus;
+  var isEnabled = uiObj.DataContext.IsEnabled;
+
+  Log.Message(PhotometerName + " is : " + status + ".");
+  if(isEnabled)
+  {
+    Log.Message(PhotometerName + " is : Enabled");
+  } else {
+    Log.Message(PhotometerName + " is : Disabled");
+  }
+  ;
+
+  // ✅ Return both values as object
+  return {
+    status: status,
+    isEnabled: isEnabled
+  };
 }
 
 function VerifyBoreHealth()

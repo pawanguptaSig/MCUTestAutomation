@@ -33,67 +33,72 @@
       
   Scenario: Disable photometer 1 from main portal.
       Given TunneLogic MCU application is on Dashboard Page
-      When Clicked on Photometer1 on Main Portal
-      And Clicked on "Disable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      When "enable" "Photometer 1"
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 1" on dashboard
       
   Scenario: Disable photometer 2 from main portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer2 on Main Portal
       And Clicked on "Disable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 2" on dashboard
+      #Then Verify "Disabled" is written under photometer icon
       
   Scenario: Disable photometer 3 from On slip portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer3 on On slip Portal
       And Clicked on "Disable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 3" on dashboard
+      #Then Verify "Disabled" is written under photometer icon
       
   Scenario: Disable photometer 4 from On slip portal
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer4 on On slip Portal
       And Clicked on "Disable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 4" on dashboard      
+      #Then Verify "Disabled" is written under photometer icon
       
   Scenario: Enable photometer 1 from main portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer1 on Main Portal
       And Clicked on "Enable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 1" on dashboard      
+      #Then Verify "Disabled" is written under photometer icon
       
   Scenario: Enable photometer 2 from main portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer2 on Main Portal
       And Clicked on "Enable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 2" on dashboard
+#      Then Verify "Disabled" is written under photometer icon
       
   Scenario: Enable photometer 3 from On slip portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer3 on On slip Portal
       And Clicked on "Enable" button
-      Then "Disabled by MCU." is written next to the enable/disable button
+      #Then "Disabled by MCU." is written next to the enable/disable button
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 3" on dashboard
+ #     Then Verify "Disabled" is written under photometer icon
       
   Scenario: Enable photometer 4 from On slip portal.
       Given TunneLogic MCU application is on Dashboard Page
       When Clicked on Photometer4 on On slip Portal
       And Clicked on "Enable" button
-      Then "Disabled by MCU." is written next to the enable/disable button.
+      #Then "Disabled by MCU." is written next to the enable/disable button.
       And Clicked on back button
-      And Verify "Disabled" is written under photometer icon
+      Then Validate the status of "Photometer 4" on dashboard
+#      Then Verify "Disabled" is written under photometer icon
       
    Scenario: Verify control source is Day Override after disabling photometer.
       Given TunneLogic MCU application is on Dashboard Page

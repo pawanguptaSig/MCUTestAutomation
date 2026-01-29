@@ -117,11 +117,15 @@ When("Clicked on Photometer4 on On slip Portal", function (){
 });
 
 When("Clicked on {arg} button", function (param1){
-  pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn(param1);
+  pgDashboardPhotometerGeneral.ClickOnTogglePhotometerBtn1(param1);
 });
 
 Then("{arg} is written next to the enable\\/disable button", function (param1){
   pgDashboardPhotometerGeneral.VerifyDisabledByMCUVisible(param1);
+});
+
+When("{arg} {arg}", function (param1, param2){
+  pgDashboard.TogglePhotometer(param1, param2);
 });
 
 Then("Clicked on back button", function (){
@@ -178,6 +182,10 @@ When("Clicked on OK", function (){
 
 Then("Set light level as {arg} for {arg} color group", function (param1, param2){
   pgControlColorOverride.SetLightLevelForColorGroup(param1, param2);
+});
+
+Then("Validate the status of {arg} on dashboard", function (param1){
+  pgDashboard.VerifyPhotometerStatus(param1);
 });
 
 Then("{arg} is written next to the enable\\/disable button.", function (param1){
@@ -247,5 +255,4 @@ Then("Verify FLGs in Bore {arg}", function (param1){
 Then("Verify Section Groups in Bore {arg}", function (param1){
   pgDashboardSectionGroup.getSectionGroupOnBore(param1);
 });
-
 

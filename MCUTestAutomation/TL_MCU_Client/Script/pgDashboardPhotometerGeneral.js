@@ -4,7 +4,7 @@
 //USEUNIT AppString
 //----------------------------------------------------------------------------------------------------------------------------------------
 var BaseLanding = "Aliases.TunneLogicMCUClient.HwndSource_mainWindow.mainWindow_."
-
+                  
 var tabCtrlMain = BaseLanding + "tabCtrlMain."
 var PhotometerGeneralTab = tabCtrlMain + "tabItem1"
 var PhotometerTimeBasedOverrideTab = tabCtrlMain + "tabItem2"
@@ -24,6 +24,52 @@ function ClickOnTimeBasedOverrideTab()
 }
 
 function ClickOnTogglePhotometerBtn(strToggle) {
+
+  var btnObj = eval(EnableDisableToggleBtn);
+  var isEnabled = btnObj.DataContext.IsPMEnabled;   // true / false
+
+  Log.Message("Current Photometer Enabled State: " + isEnabled);
+
+  strToggle = strToggle.toLowerCase();
+
+  // ---------------- ENABLE ----------------
+  if (strToggle === "enable") {
+
+    if (!isEnabled) {
+      btnObj.Click();
+      Log.Message("Clicked Enable. Photometer is now Enabled.");
+    }
+    else {
+      Log.Message("Photometer is already Enabled.");
+    }
+
+    return true;
+  }
+
+  // ---------------- DISABLE ----------------
+  else if (strToggle === "disable") {
+
+    if (isEnabled) {
+      btnObj.Click();
+      Log.Message("Clicked Disable. Photometer is now Disabled.");
+    }
+    else {
+      Log.Message("Photometer is already Disabled.");
+    }
+
+    return true;
+  }
+
+  // ---------------- INVALID INPUT ----------------
+  else {
+    Log.Error("Invalid toggle value: " + strToggle + 
+              ". Use 'Enable' or 'Disable'.");
+    return false;
+  }
+}
+
+
+function ClickOnTogglePhotometerBtn1(strToggle) {
   var expectedText = "Disabled by MCU.";
 
   var uiObj = eval(TextDisabledByMcu);
